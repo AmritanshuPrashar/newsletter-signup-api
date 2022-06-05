@@ -5,8 +5,8 @@ const request = require('request');
 const https = require('https');
 const bodyParser = require('body-parser');
 const req = require('express/lib/request');
+const res = require('express/lib/response');
 app.use(bodyParser.urlencoded({ extended: true }));
-
 
 //To use all static files like styles.css  
 app.use(express.static("public"));
@@ -21,7 +21,9 @@ app.get('/', (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
     console.log("App is running at port 3000 <3");
 })
-
+function goback() {
+    
+}
 app.post('/', (req, res) => {
     const firstName = req.body.fName;
     const lastName = req.body.lName;
@@ -64,6 +66,8 @@ app.post('/', (req, res) => {
     request.end();
 
 });
+
+
 
 
 //Api kEy :  6725f2ed4a0d945769ca9ec17a847717-us10
