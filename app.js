@@ -70,7 +70,4 @@ app.post('/', (req, res) => {
 
 
 
-//Api kEy :  6725f2ed4a0d945769ca9ec17a847717-us10
-
-
 
